@@ -1,0 +1,4 @@
+mixin toggle(idValue, type, color)
+  label(class = 'toggle toggle--' + color)
+    input.toggle__input(type = 'checkbox' id = idValue)
+    span(class = 'toggle__slider  toggle__slider--' + color + '  toggle__slider--' + type)

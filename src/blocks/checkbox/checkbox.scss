@@ -1,0 +1,14 @@
+.checkbox {
+  display: table;
+}
+
+.checkbox__item {
+  display: table-cell;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.checkbox__text {
+  font-family: "Lato Black", "arial", sans-serif;
+  font-size: 16px;
+}

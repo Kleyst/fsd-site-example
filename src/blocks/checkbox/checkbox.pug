@@ -1,0 +1,8 @@
+include ../toggle/toggle.pug
+
+mixin checkbox(idValue, text, type, color)
+  .checkbox.checkbox--toggle
+    .checkbox__item
+      +toggle(idValue, type, color)
+    .checkbox__item
+      label.checkbox__text(for = idValue)= text

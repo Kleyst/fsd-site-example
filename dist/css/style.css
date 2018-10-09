@@ -1,0 +1,86 @@
+.checkbox {
+  display: table; }
+
+.checkbox__item {
+  display: table-cell;
+  padding: 5px;
+  vertical-align: middle; }
+
+.checkbox__text {
+  font-family: "Lato Black", "arial", sans-serif;
+  font-size: 16px; }
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 24px; }
+
+.toggle__input {
+  display: none; }
+
+.toggle__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e5e5e5;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.toggle__slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s; }
+
+.toggle__slider:after {
+  content: "OFF";
+  position: absolute;
+  top: 5px;
+  right: 9px;
+  color: white;
+  font-family: "Lato Black", "arial", sans-serif;
+  font-size: 12px;
+  transition: .4s; }
+
+.toggle__input:checked + .toggle__slider:after {
+  content: "ON";
+  left: 13px; }
+
+.toggle__input:checked + .toggle__slider--green {
+  background-color: #4eb7a8; }
+
+.toggle__input:checked + .toggle__slider--red {
+  background-color: #e75735; }
+
+.toggle__input:checked + .toggle__slider:before {
+  -webkit-transform: translateX(36px);
+  -ms-transform: translateX(36px);
+  transform: translateX(36px); }
+
+.toggle__slider--round {
+  border-radius: 12px; }
+
+.toggle__slider--round:before {
+  border-radius: 50%; }
+
+.toggle__slider--superellipse {
+  border-radius: 6px; }
+
+.toggle__slider--superellipse:before {
+  border-radius: 25%; }
+
+@font-face {
+  font-family: 'Lato Black';
+  src: url("../fonts/Lato-Black.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
